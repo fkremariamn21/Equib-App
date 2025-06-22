@@ -1,0 +1,145 @@
+/* src/pages/User/ProfilePage.css */
+
+.profile-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.profile-header h1 {
+  color: #004d40; /* Dark green */
+  margin-bottom: 5px;
+  font-size: 2.5em;
+}
+
+.profile-header .email-display {
+  font-size: 1em;
+  color: #777;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+section h2 {
+  color: #00796b; /* Medium green */
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0f2f1;
+  padding-bottom: 10px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.details-grid > div {
+  background-color: #e0f2f1;
+  padding: 15px;
+  border-radius: 5px;
+  word-wrap: break-word; /* Prevents overflow for long texts */
+}
+
+.details-grid strong {
+  color: #004d40;
+}
+
+.bank-details p {
+  font-size: 1.1em;
+}
+
+.bank-details strong {
+  color: #004d40;
+}
+
+.bank-details .button {
+  margin-top: 10px;
+}
+
+.equib-activity .activity-summary p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.equib-activity .activity-summary strong {
+  color: #004d40;
+}
+
+.activity-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Reusing button styles from other pages */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: #00796b; /* Medium green */
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: #004d40; /* Darker green */
+}
+
+.button.secondary {
+  background-color: #ffffff;
+  color: #00796b;
+  border: 1px solid #00796b;
+}
+
+.button.secondary:hover {
+  background-color: #e0f2f1; /* Light green */
+}
+
+.profile-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* Loading and Error States for the page container */
+.profile-page-container {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.profile-page-container.error-state {
+  color: red;
+  border: 1px solid red;
+  background-color: #ffe0e0;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 500px;
+}

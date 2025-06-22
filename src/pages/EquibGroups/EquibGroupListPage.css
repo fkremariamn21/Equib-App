@@ -1,0 +1,158 @@
+/* src/pages/EquibGroups/EquibGroupListPage.css */
+
+.equib-group-list-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.list-header h1 {
+  color: #004d40; /* Dark green */
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.list-header .button.primary {
+  padding: 10px 20px;
+  background-color: #00796b; /* Medium green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.list-header .button.primary:hover {
+  background-color: #004d40; /* Darker green on hover */
+}
+
+.no-groups-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.group-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.equib-group-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.equib-group-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.equib-group-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.equib-group-card h3 {
+  color: #00796b; /* Medium green */
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.equib-group-card .description {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1; /* Allows description to take up available space */
+}
+
+.equib-group-card .card-details p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.equib-group-card .card-details strong {
+  color: #004d40;
+}
+
+.equib-group-card .view-details-button {
+  display: block; /* Make the button take full width */
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #00796b; /* Medium green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.equib-group-card .view-details-button:hover {
+  background-color: #004d40; /* Darker green on hover */
+}
+
+/* Privacy Tag from details page, reused here */
+.privacy-tag {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.privacy-tag.public {
+  background-color: #e0f2f1; /* Light green */
+  color: #00796b;
+}
+.privacy-tag.private {
+  background-color: #ffe0b2; /* Light orange */
+  color: #e65100;
+}
+
+/* Loading and Error States */
+.equib-group-list-container {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.equib-group-list-container.error-state {
+  color: red;
+  border: 1px solid red;
+  background-color: #ffe0e0;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 500px;
+}

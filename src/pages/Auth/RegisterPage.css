@@ -1,0 +1,115 @@
+/* src/pages/Auth/RegisterPage.css */
+
+.register-page-wrapper { /* New wrapper for centering */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdcfd3;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.register-container {
+  background-color: #d9dfde;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Adjust max-width as needed for a slightly wider form */
+  box-sizing: border-box;
+  text-align: center; /* Center h2, p, etc. */
+}
+
+.register-container h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+/* Consider renaming form-group1 to form-group for consistency across your app */
+.form-group1 { /* Or .form-group if you rename it in JSX */
+  margin-bottom: 20px;
+  text-align: left; /* Align labels and inputs to the left within the form group */
+}
+
+.form-group1 label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-group1 input[type="text"],
+.form-group1 input[type="email"],
+.form-group1 input[type="tel"],
+.form-group1 input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.form-group1 input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.success-message {
+  color: #28a745;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Styling for the reusable Button component */
+.custom-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #50031d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space above the button */
+}
+
+.custom-button:hover:not(:disabled) {
+  background-color: #010b16;
+}
+
+.custom-button:disabled {
+  background-color: #331010;
+  cursor: not-allowed;
+}
+
+.login-link { /* Now correctly refers to a p tag with a Link inside */
+  margin-top: 20px;
+  font-size: 1em;
+  color: #555;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+/* src/pages/Auth/LoginPage.css */
+
+.login-page-wrapper {
+  /* No special centering for the wrapper itself, just define height */
+  min-height: 100vh;
+  background-color: #74c0a9;
+  background-image: url('./Ahadu-Bank-Logo2.png');
+    padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Needed for absolute positioning if you want vertical centering */
+}
+ 
+.login-container {
+  /* Your existing styles for the actual login form container */
+   background-color: #d9dfde;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Define a max-width */ 
+  margin: 50px auto; /* Centers horizontally and adds 50px top/bottom margin */
+  text-align: center;
+ 
+  /* For vertical centering with margin:auto, you often combine with absolute positioning */
+  /* If you want perfect vertical centering with this method: */
+  /*
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  */
+}
+
+/* ... (rest of your form-group, input, button, error-message styles remain the same) ... */

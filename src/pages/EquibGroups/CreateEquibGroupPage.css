@@ -1,0 +1,128 @@
+/* src/pages/EquibGroups/CreateEquibGroupPage.css */
+
+.create-group-page {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.create-group-page h2 {
+  text-align: center;
+  color: #004d40; /* Dark green */
+  margin-bottom: 10px;
+}
+
+.page-description {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.create-group-form .form-group {
+  margin-bottom: 20px;
+}
+
+.create-group-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #00796b; /* Medium green */
+}
+
+.create-group-form input[type="text"],
+.create-group-form input[type="number"],
+.create-group-form input[type="date"],
+.create-group-form textarea,
+.create-group-form select {
+  width: calc(100% - 20px); /* Account for padding */
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.create-group-form textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.create-group-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-group, .radio-group {
+  display: flex; /* Aligns checkbox/radio with label */
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.radio-group div { /* To space out individual radio options */
+  margin-right: 20px;
+}
+
+.radio-group label {
+  display: inline-block;
+  font-weight: normal; /* Reset font-weight for radio labels */
+}
+
+.error-message, .submission-error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.submission-success-message {
+  color: #00796b; /* Green for success */
+  font-size: 0.95em;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #e0f2f1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #004d40;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #00796b; /* Medium green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #004d40; /* Darker green on hover */
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Loading and Error States for the page container */
+.create-group-container {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.create-group-container.error-state {
+  color: red;
+  border: 1px solid red;
+  background-color: #ffe0e0;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 500px;
+}
