@@ -30,7 +30,7 @@ const Header = () => {
               <Link to="/equib-groups" style={{ textDecoration: 'none', color: '#ffffff', fontWeight: '500' }}>Equib Groups</Link>
             </li>
             <li style={{ marginLeft: '20px' }}>
-              <Link to="/create-equib-group" style={{ textDecoration: 'none', color: '#ffffff', fontWeight: '500' }}>Create Equib</Link>
+              <Link to="/EquibGroups/CreateEquibGroupPage" style={{ textDecoration: 'none', color: '#ffffff', fontWeight: '500' }}>Create Equib</Link>
             </li>
             <li style={{ marginLeft: '20px' }}>
               <Link to="/profile" style={{ textDecoration: 'none', color: '#ffffff',  fontWeight: '500' }}>Profile</Link>
