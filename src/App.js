@@ -1,6 +1,7 @@
 // src/App.js
 
 import React from 'react';
+import logo from './logo.png';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 // Assuming these imports are correct based on your file structure
