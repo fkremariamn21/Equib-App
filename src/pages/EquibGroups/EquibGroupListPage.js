@@ -136,7 +136,7 @@ const EquibGroupListPage = () => {
     <div className="equib-group-list-page">
       <div className="list-header">
         <h1>Available Equib Groups</h1>
-        <Link to="/equib-groups/create" className="button primary">
+        <Link to="/EquibGroups/CreateEquibGroupPage" className="button primary">
           + Create New Equib Group
         </Link>
       </div>
