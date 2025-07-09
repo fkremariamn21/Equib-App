@@ -166,7 +166,7 @@ const DashboardPage = () => {
       <section className="dashboard-quick-actions">
         <h2>Quick Actions</h2>
         <div className="action-buttons">
-          <Link to="/create-equib-group" className="button primary">
+          <Link to="/EquibGroups/CreateEquibGroupPage" className="button primary">
             Create New Equib Group
           </Link>
           <Link to="/equib-groups" className="button secondary">
