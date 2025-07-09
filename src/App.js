@@ -43,7 +43,7 @@ function App() {
             <Route path="/equib-groups/:id" element={<EquibGroupDetailsPage />} />
             {/* Consolidated and corrected path for Create Equib Group Page.
                 It must be inside ProtectedRoute as creating a group requires login. */}
-            <Route path="/equib-groups/create" element={<CreateEquibGroupPage />} />
+            <Route path="/EquibGroups/CreateEquibGroupPage" element={<CreateEquibGroupPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             {/* Add any other protected routes here */}
           </Route>
